@@ -1,0 +1,24 @@
+{
+    "fields": {
+        "turboSmsAuthToken": "HTTP API token",
+        "turboSmsSenderSms": "SMS alpha name",
+        "turboSmsSenderViber": "Viber sender",
+        "turboSmsSendType": "Send type",
+        "turboSmsSendTimeout": "Connection timeout",
+        "turboSmsIsLogging": "Enable send logging"
+    },
+    "options": {
+        "turboSmsSendType": {
+            "sms": "SMS",
+            "viber": "Viber",
+            "hybrid": "Hybrid"
+        }
+    },
+    "tooltips": {
+        "turboSmsAuthToken": "Leave blank to preserve the saved token.",
+        "turboSmsSendType": "Hybrid - if the message was not delivered in Viber, it is automatically sent as SMS"
+    },
+    "titles": {
+        "TurboSMS": "SMS · TurboSMS"
+    }
+}

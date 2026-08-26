@@ -1,0 +1,36 @@
+{
+    "view": "views/admin/integrations/edit",
+    "fields": {
+        "turboSmsAuthToken": {
+            "type": "password",
+            "maxLength": 40,
+            "tooltip": true
+        },
+        "turboSmsSenderSms": {
+            "type": "varchar",
+            "maxLength": 25
+        },
+        "turboSmsSenderViber": {
+            "type": "varchar",
+            "maxLength": 25
+        },
+        "turboSmsSendType": {
+            "type": "enum",
+            "options": [
+                "sms",
+                "viber",
+                "hybrid"
+            ],
+            "required": true,
+            "default": "sms",
+            "tooltip": true
+        },
+        "turboSmsSendTimeout": {
+            "type": "int"
+        },
+        "turboSmsIsLogging": {
+            "type": "bool",
+            "default": false
+        }
+    }
+}

@@ -1,0 +1,24 @@
+{
+    "fields": {
+        "turboSmsAuthToken": "HTTP API токен",
+        "turboSmsSenderSms": "Альфаім'я для SMS",
+        "turboSmsSenderViber": "Відправник для Viber",
+        "turboSmsSendType": "Тип відправки",
+        "turboSmsSendTimeout": "Таймаут з'єднання",
+        "turboSmsIsLogging": "Увімкнути лог відправки"
+    },
+    "options": {
+        "turboSmsSendType": {
+            "sms": "SMS",
+            "viber": "Viber",
+            "hybrid": "Гібридний"
+        }
+    },
+    "tooltips": {
+        "turboSmsAuthToken": "Залиште порожнім, щоб зберегти наявний токен.",
+        "turboSmsSendType": "Гібридний - це якщо повідомлення не було доставлено в Viber, воно автоматично надсилається у вигляді SMS"
+    },
+    "titles": {
+        "TurboSMS": "SMS · TurboSMS"
+    }
+}

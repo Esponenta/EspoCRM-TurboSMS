@@ -1,0 +1,5 @@
+{
+    "TurboSMS": {
+        "senderClassName": "Espo\\Modules\\TurboSMS\\TurboSmsHttpSender"
+    }
+}

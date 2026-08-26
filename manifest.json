@@ -1,0 +1,12 @@
+{
+    "name": "TurboSMS",
+    "version": "1.0.0",
+    "type": "extension",
+    "acceptableVersions": [
+        ">=10.0.0"
+    ],
+    "php": [
+        ">=8.3"
+    ],
+    "releaseDate": "2026-08-02"
+}

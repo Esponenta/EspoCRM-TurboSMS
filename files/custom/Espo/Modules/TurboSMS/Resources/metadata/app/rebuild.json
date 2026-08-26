@@ -1,0 +1,6 @@
+{
+    "actionClassNameList": [
+        "__APPEND__",
+        "Espo\\Modules\\TurboSMS\\Classes\\Rebuild\\Actions\\MigrateAuthToken"
+    ]
+}
