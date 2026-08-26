@@ -1,5 +1,7 @@
 {
     "name": "TurboSMS",
+    "author": "Esponenta",
+    "description": "Інтеграція TurboSMS для надсилання SMS і Viber з EspoCRM.",
     "version": "1.0.0",
     "type": "extension",
     "acceptableVersions": [
