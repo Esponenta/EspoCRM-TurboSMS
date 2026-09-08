@@ -1,3 +1,10 @@
 {
-    "transactionalSave": true
+    "transactionalSave": true,
+    "fields": {
+        "turboSmsBalance": {"type": "decimal", "decimalPlaces": 2, "readOnly": true},
+        "turboSmsBalanceCheckedAt": {"type": "datetime", "readOnly": true},
+        "turboSmsBalanceAlerted": {"type": "bool", "default": false, "utility": true, "readOnly": true},
+        "turboSmsSyncToken": {"type": "varchar", "maxLength": 64, "utility": true, "readOnly": true},
+        "turboSmsSyncStartedAt": {"type": "datetime", "utility": true, "readOnly": true}
+    }
 }

@@ -1,0 +1,54 @@
+{
+    "fields": {
+        "turboSmsSendType": "Тип відправки TurboSMS",
+        "turboSmsDeliveryStatus": "Статус доставки TurboSMS",
+        "turboSmsDeliveryData": "Деталі доставки TurboSMS",
+        "turboSmsNextCheckAt": "Наступна перевірка доставки",
+        "turboSmsTrackingEndsAt": "Відстеження доставки завершується о",
+        "turboSmsRecipient": "Одержувач",
+        "turboSmsChannel": "Канал",
+        "turboSmsMessageId": "UUID повідомлення",
+        "turboSmsProviderStatus": "Статус провайдера",
+        "turboSmsResponseCode": "Код відповіді",
+        "turboSmsProviderTime": "Час провайдера",
+        "turboSmsCost": "Вартість",
+        "turboSmsBalance": "Баланс, UAH"
+    },
+    "labels": {
+        "turboSmsTransport": "Доставка TurboSMS"
+    },
+    "messages": {
+        "turboSmsTrackingExpired": "Вікно опитування доставки завершилося."
+    },
+    "options": {
+        "turboSmsSendType": {
+            "sms": "SMS",
+            "viber": "Viber",
+            "hybrid": "Гібридний"
+        },
+        "turboSmsDeliveryStatus": {
+            "Queued": "У черзі",
+            "InProgress": "У процесі",
+            "Delivered": "Доставлено",
+            "PartiallyDelivered": "Частково доставлено",
+            "Failed": "Помилка",
+            "Unknown": "Невідомо"
+        },
+        "turboSmsChannelStatus": {
+            "Queued": "У черзі",
+            "WaitingFallback": "Очікує резервної SMS",
+            "Accepted": "Прийнято",
+            "Sent": "Надіслано",
+            "Delivered": "Доставлено",
+            "Read": "Прочитано",
+            "Expired": "Термін минув",
+            "Undelivered": "Не доставлено",
+            "Rejected": "Відхилено",
+            "Failed": "Помилка",
+            "Cancelled": "Скасовано",
+            "Unknown": "Невідомо",
+            "NotUsed": "Не використано",
+            "Unconfirmed": "Не підтверджено"
+        }
+    }
+}

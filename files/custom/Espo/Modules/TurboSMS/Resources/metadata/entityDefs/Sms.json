@@ -1,0 +1,13 @@
+{
+    "fields": {
+        "turboSmsSendType": {"type": "enum", "options": ["", "sms", "viber", "hybrid"], "duplicateIgnore": true, "readOnly": true},
+        "turboSmsDeliveryStatus": {"type": "enum", "options": ["", "Queued", "InProgress", "Delivered", "PartiallyDelivered", "Failed", "Unknown"], "duplicateIgnore": true, "readOnly": true, "view": "views/fields/enum-styled", "style": {"Queued": "info", "InProgress": "warning", "Delivered": "success", "PartiallyDelivered": "warning", "Failed": "danger", "Unknown": "default"}},
+        "turboSmsDeliveryData": {"type": "jsonObject", "duplicateIgnore": true, "readOnly": true, "view": "turbosms:views/sms/fields/delivery-data"},
+        "turboSmsNextCheckAt": {"type": "datetime", "utility": true, "duplicateIgnore": true, "readOnly": true},
+        "turboSmsTrackingEndsAt": {"type": "datetime", "utility": true, "duplicateIgnore": true, "readOnly": true},
+        "turboSmsBalance": {"type": "decimal", "decimalPlaces": 2, "notStorable": true, "readOnly": true, "utility": true, "duplicateIgnore": true}
+    },
+    "indexes": {
+        "turboSmsNextCheckAt": {"columns": ["turboSmsNextCheckAt", "deleted"]}
+    }
+}

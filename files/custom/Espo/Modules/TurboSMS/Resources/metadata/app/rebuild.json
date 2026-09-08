@@ -1,6 +1,8 @@
 {
     "actionClassNameList": [
         "__APPEND__",
-        "Espo\\Modules\\TurboSMS\\Classes\\Rebuild\\Actions\\MigrateAuthToken"
+        "Espo\\Modules\\TurboSMS\\Classes\\Rebuild\\Actions\\MigrateAuthToken",
+        "Espo\\Modules\\TurboSMS\\Classes\\Rebuild\\Actions\\ConfigureSync",
+        "Espo\\Modules\\TurboSMS\\Classes\\Rebuild\\Actions\\ConfigureBalanceReport"
     ]
 }

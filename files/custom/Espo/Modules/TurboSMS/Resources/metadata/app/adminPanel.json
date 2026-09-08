@@ -1,0 +1,13 @@
+{
+    "email": {
+        "itemList": [
+            "__APPEND__",
+            {
+                "url": "#Admin/integrations/name=TurboSMS",
+                "label": "TurboSMS Settings",
+                "iconClass": "fas fa-comment-sms",
+                "description": "turboSmsSettings"
+            }
+        ]
+    }
+}

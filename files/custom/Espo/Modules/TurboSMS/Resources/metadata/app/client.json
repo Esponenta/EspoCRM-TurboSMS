@@ -1,0 +1,18 @@
+{
+    "scriptList": [
+        "__APPEND__",
+        "client/custom/modules/turbosms/src/views/admin/integration.js",
+        "client/custom/modules/turbosms/src/views/fields/scheduling-field.js",
+        "client/custom/modules/turbosms/src/views/fields/notification-users.js",
+        "client/custom/modules/turbosms/src/views/sms/fields/delivery-data.js",
+        "client/custom/modules/turbosms/src/handlers/sms/transport-section.js"
+    ],
+    "developerModeScriptList": [
+        "__APPEND__",
+        "client/custom/modules/turbosms/src/views/admin/integration.js",
+        "client/custom/modules/turbosms/src/views/fields/scheduling-field.js",
+        "client/custom/modules/turbosms/src/views/fields/notification-users.js",
+        "client/custom/modules/turbosms/src/views/sms/fields/delivery-data.js",
+        "client/custom/modules/turbosms/src/handlers/sms/transport-section.js"
+    ]
+}

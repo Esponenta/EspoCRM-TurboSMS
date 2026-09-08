@@ -1,0 +1,6 @@
+{
+    "viewSetupHandlers": {
+        "record/detail": ["__APPEND__", "turbosms:handlers/sms/transport-section"],
+        "record/detailSmall": ["__APPEND__", "turbosms:handlers/sms/transport-section"]
+    }
+}

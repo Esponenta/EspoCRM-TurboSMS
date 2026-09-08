@@ -4,8 +4,19 @@
         "turboSmsSenderSms": "Альфаім'я для SMS",
         "turboSmsSenderViber": "Відправник для Viber",
         "turboSmsSendType": "Тип відправки",
-        "turboSmsSendTimeout": "Таймаут з'єднання",
-        "turboSmsIsLogging": "Увімкнути лог відправки"
+        "turboSmsConnectTimeout": "Час підключення, с",
+        "turboSmsRequestTimeout": "Час очікування запиту, с",
+        "turboSmsIsLogging": "Увімкнути лог відправки та синхронізації",
+        "turboSmsSyncEnabled": "Увімкнути синхронізацію балансу та доставки",
+        "turboSmsSyncCron": "Розклад синхронізації",
+        "turboSmsSyncBatchSize": "Розмір пакета синхронізації",
+        "turboSmsTrackingDays": "Дні відстеження доставки",
+        "turboSmsLowBalanceEnabled": "Увімкнути сповіщення про низький баланс",
+        "turboSmsLowBalanceThreshold": "Поріг низького балансу",
+        "turboSmsNotificationUsers": "Одержувачі: користувачі",
+        "turboSmsNotificationTeams": "Одержувачі: команди",
+        "turboSmsBalance": "Баланс",
+        "turboSmsBalanceCheckedAt": "Баланс перевірено о"
     },
     "options": {
         "turboSmsSendType": {
@@ -16,7 +27,20 @@
     },
     "tooltips": {
         "turboSmsAuthToken": "Залиште порожнім, щоб зберегти наявний токен.",
-        "turboSmsSendType": "Гібридний - це якщо повідомлення не було доставлено в Viber, воно автоматично надсилається у вигляді SMS"
+        "turboSmsConnectTimeout": "Найбільший час для встановлення HTTPS-з'єднання.",
+        "turboSmsRequestTimeout": "Найбільша загальна тривалість одного запиту API.",
+        "turboSmsSendType": "Гібридний - це якщо повідомлення не було доставлено в Viber, воно автоматично надсилається у вигляді SMS",
+        "turboSmsSyncCron": "Позначення Crontab. Визначає частоту синхронізації.\n\n`*/5 * * * *` - кожні 5 хвилин\n\n`0 */2 * * *` - кожні 2 години\n\n`30 1 * * *` - о 01:30 один раз на день",
+        "turboSmsNotificationUsers": "Виберіть активних внутрішніх користувачів. Якщо активних одержувачів не знайдено, сповіщення отримають усі активні адміністратори.",
+        "turboSmsNotificationTeams": "Сповіщення отримають усі активні внутрішні користувачі вибраних команд. Повторні одержувачі вилучаються."
+    },
+    "labels": {
+        "turboSmsRunSync": "Запустити синхронізацію"
+    },
+    "messages": {
+        "turboSmsSyncScheduled": "Синхронізацію заплановано.",
+        "turboSmsSyncStarted": "Синхронізація вже в черзі або виконується.",
+        "turboSmsLowBalanceNotification": "Низький баланс [TurboSMS](#Admin/integrations/name=TurboSMS): {balance} UAH. Поріг: {threshold} UAH."
     },
     "titles": {
         "TurboSMS": "SMS · TurboSMS"

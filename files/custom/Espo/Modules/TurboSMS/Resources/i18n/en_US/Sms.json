@@ -1,0 +1,54 @@
+{
+    "fields": {
+        "turboSmsSendType": "TurboSMS send type",
+        "turboSmsDeliveryStatus": "TurboSMS delivery status",
+        "turboSmsDeliveryData": "TurboSMS delivery details",
+        "turboSmsNextCheckAt": "Next delivery check",
+        "turboSmsTrackingEndsAt": "Delivery tracking ends at",
+        "turboSmsRecipient": "Recipient",
+        "turboSmsChannel": "Channel",
+        "turboSmsMessageId": "Message UUID",
+        "turboSmsProviderStatus": "Provider status",
+        "turboSmsResponseCode": "Response code",
+        "turboSmsProviderTime": "Provider time",
+        "turboSmsCost": "Cost",
+        "turboSmsBalance": "Balance, UAH"
+    },
+    "labels": {
+        "turboSmsTransport": "TurboSMS delivery"
+    },
+    "messages": {
+        "turboSmsTrackingExpired": "Delivery polling window has ended."
+    },
+    "options": {
+        "turboSmsSendType": {
+            "sms": "SMS",
+            "viber": "Viber",
+            "hybrid": "Hybrid"
+        },
+        "turboSmsDeliveryStatus": {
+            "Queued": "Queued",
+            "InProgress": "In progress",
+            "Delivered": "Delivered",
+            "PartiallyDelivered": "Partially delivered",
+            "Failed": "Failed",
+            "Unknown": "Unknown"
+        },
+        "turboSmsChannelStatus": {
+            "Queued": "Queued",
+            "WaitingFallback": "Waiting for SMS fallback",
+            "Accepted": "Accepted",
+            "Sent": "Sent",
+            "Delivered": "Delivered",
+            "Read": "Read",
+            "Expired": "Expired",
+            "Undelivered": "Undelivered",
+            "Rejected": "Rejected",
+            "Failed": "Failed",
+            "Cancelled": "Cancelled",
+            "Unknown": "Unknown",
+            "NotUsed": "Not used",
+            "Unconfirmed": "Unconfirmed"
+        }
+    }
+}

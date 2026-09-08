@@ -1,0 +1,15 @@
+{
+    "internalReports": {
+        "TurboSMS:CurrentBalance": {
+            "className": "Espo\\Modules\\TurboSMS\\Reports\\CurrentBalance",
+            "entityType": "Sms",
+            "type": "Grid",
+            "depth": 0,
+            "columns": [
+                "SUM:turboSmsBalance"
+            ],
+            "params": [],
+            "paramsDefaults": {}
+        }
+    }
+}

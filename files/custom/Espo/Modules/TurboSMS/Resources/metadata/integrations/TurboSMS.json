@@ -1,5 +1,5 @@
 {
-    "view": "views/admin/integrations/edit",
+    "view": "turbosms:views/admin/integration",
     "fields": {
         "turboSmsAuthToken": {
             "type": "password",
@@ -25,12 +25,74 @@
             "default": "sms",
             "tooltip": true
         },
-        "turboSmsSendTimeout": {
-            "type": "int"
+        "turboSmsConnectTimeout": {
+            "type": "int",
+            "default": 5,
+            "min": 1,
+            "max": 30,
+            "tooltip": true
+        },
+        "turboSmsRequestTimeout": {
+            "type": "int",
+            "default": 30,
+            "min": 5,
+            "max": 120,
+            "tooltip": true
         },
         "turboSmsIsLogging": {
             "type": "bool",
             "default": false
+        },
+        "turboSmsSyncEnabled": {
+            "type": "bool",
+            "default": true
+        },
+        "turboSmsSyncCron": {
+            "type": "varchar",
+            "default": "*/5 * * * *",
+            "view": "turbosms:views/fields/scheduling-field",
+            "tooltip": true
+        },
+        "turboSmsSyncBatchSize": {
+            "type": "int",
+            "default": 50,
+            "min": 1,
+            "max": 100
+        },
+        "turboSmsTrackingDays": {
+            "type": "int",
+            "default": 7,
+            "min": 1,
+            "max": 30
+        },
+        "turboSmsLowBalanceEnabled": {
+            "type": "bool",
+            "default": false
+        },
+        "turboSmsLowBalanceThreshold": {
+            "type": "decimal",
+            "decimalPlaces": 2,
+            "min": 0
+        },
+        "turboSmsNotificationUsers": {
+            "type": "linkMultiple",
+            "entity": "User",
+            "tooltip": true,
+            "view": "turbosms:views/fields/notification-users"
+        },
+        "turboSmsNotificationTeams": {
+            "type": "linkMultiple",
+            "entity": "Team",
+            "tooltip": true
+        },
+        "turboSmsBalance": {
+            "type": "decimal",
+            "decimalPlaces": 2,
+            "readOnly": true
+        },
+        "turboSmsBalanceCheckedAt": {
+            "type": "datetime",
+            "readOnly": true
         }
     }
 }

@@ -1,0 +1,8 @@
+{
+    "TurboSmsSync": {
+        "name": "Synchronize TurboSMS",
+        "jobClassName": "Espo\\Modules\\TurboSMS\\Jobs\\TurboSmsSync",
+        "scheduling": "*/5 * * * *",
+        "isDefault": true
+    }
+}

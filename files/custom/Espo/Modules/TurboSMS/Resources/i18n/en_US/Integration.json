@@ -4,8 +4,19 @@
         "turboSmsSenderSms": "SMS alpha name",
         "turboSmsSenderViber": "Viber sender",
         "turboSmsSendType": "Send type",
-        "turboSmsSendTimeout": "Connection timeout",
-        "turboSmsIsLogging": "Enable send logging"
+        "turboSmsConnectTimeout": "Connection timeout, sec",
+        "turboSmsRequestTimeout": "Request timeout, sec",
+        "turboSmsIsLogging": "Enable send and synchronization logging",
+        "turboSmsSyncEnabled": "Enable balance and delivery synchronization",
+        "turboSmsSyncCron": "Synchronization schedule",
+        "turboSmsSyncBatchSize": "Synchronization batch size",
+        "turboSmsTrackingDays": "Delivery tracking days",
+        "turboSmsLowBalanceEnabled": "Enable low-balance alerts",
+        "turboSmsLowBalanceThreshold": "Low-balance threshold",
+        "turboSmsNotificationUsers": "Recipients: users",
+        "turboSmsNotificationTeams": "Recipients: teams",
+        "turboSmsBalance": "Balance",
+        "turboSmsBalanceCheckedAt": "Balance checked at"
     },
     "options": {
         "turboSmsSendType": {
@@ -16,7 +27,20 @@
     },
     "tooltips": {
         "turboSmsAuthToken": "Leave blank to preserve the saved token.",
-        "turboSmsSendType": "Hybrid - if the message was not delivered in Viber, it is automatically sent as SMS"
+        "turboSmsConnectTimeout": "Maximum time allowed to establish an HTTPS connection.",
+        "turboSmsRequestTimeout": "Maximum total duration of one API request.",
+        "turboSmsSendType": "Hybrid - if the message was not delivered in Viber, it is automatically sent as SMS",
+        "turboSmsSyncCron": "Crontab notation. Defines synchronization frequency.\n\n`*/5 * * * *` - every 5 minutes\n\n`0 */2 * * *` - every 2 hours\n\n`30 1 * * *` - at 01:30 once a day",
+        "turboSmsNotificationUsers": "Select active internal users. If no active recipient can be resolved, all active administrators are notified.",
+        "turboSmsNotificationTeams": "All active internal users in the selected teams are notified. Duplicate recipients are removed."
+    },
+    "labels": {
+        "turboSmsRunSync": "Run synchronization"
+    },
+    "messages": {
+        "turboSmsSyncScheduled": "Synchronization was scheduled.",
+        "turboSmsSyncStarted": "Synchronization is already queued or running.",
+        "turboSmsLowBalanceNotification": "[TurboSMS](#Admin/integrations/name=TurboSMS) low balance: {balance} UAH. Threshold: {threshold} UAH."
     },
     "titles": {
         "TurboSMS": "SMS · TurboSMS"

@@ -1,0 +1,7 @@
+[
+    {
+        "route": "/TurboSMS/sync",
+        "method": "post",
+        "actionClassName": "Espo\\Modules\\TurboSMS\\Api\\PostSync"
+    }
+]
